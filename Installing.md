@@ -15,3 +15,9 @@
 ### 2. Run the Installer
 ![image](https://user-images.githubusercontent.com/25150523/131098471-62e7aa04-c844-4027-9b8a-ee895fb0e3e4.png)
 **Make sure *Install launcher for all users* and *Add Python to PATH* both are checked!**
+
+## How to Install Visual Studio Code
+### 1. Download User Installer
+1. Navigate to the [Visual Studio Code Downloads page](https://code.visualstudio.com/download)
+2. Click the link for the *Windows User Installer*
+
