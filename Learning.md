@@ -66,38 +66,6 @@ same
 same
 ```
 
-
-
-### Literals
-
-A literal is a succinct and easily visible way to write a value. Literals represent the possible choices in primitive types for that language. Some of the choices of types of literals are often integers, floating point, Booleans and character strings. Python support the following literals:
-```python
-# string
-a = "hello"
-# int
-a = 0
-# long
-a = 87654L
-# float
-a = 3.14
-# complex
-a = 12j
-# boolean
-a = True
-# special
-a = None
-# unicode
-a = u"hello"
-# list
-a = [1,2,3]
-# tuple
-a = (1,2,3)
-# dict
-a = {"a": 1, "b": 2}
-# set
-a = {1,2,3}
-```
-
 ### Constants
 
 A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
