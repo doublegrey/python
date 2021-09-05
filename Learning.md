@@ -66,31 +66,6 @@ same
 same
 ```
 
-### Constants
-
-A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
-
-*In reality, Python doesn't have constants. Naming them in all capital letters is a convention to separate them from variables, however, it does not actually prevent reassignment.*
-
-#### Declaring and assigning value to a constant
-
-1. Create a ```constant.py```
-```python
-PI = 3.14
-GRAVITY = 9.8
-```
-2. Edit ```main.py```
-```python
-import constant
-
-print(constant.PI)
-print(constant.GRAVITY)
-```
-```
-3.14
-9.8
-```
-
 ### Operators
 
 Operators are special symbols that carry out operations on operands (variables and values). Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication etc.
@@ -109,25 +84,18 @@ Operators are special symbols that carry out operations on operands (variables a
 x = 14
 y = 4
 
-# Add two operands
 print('x + y =', x+y) # Output: x + y = 18
 
-# Subtract right operand from the left
 print('x - y =', x-y) # Output: x - y = 10
 
-# Multiply two operands
 print('x * y =', x*y) # Output: x * y = 56
 
-# Divide left operand by the right one 
 print('x / y =', x/y) # Output: x / y = 3.5
 
-# Floor division (quotient)
 print('x // y =', x//y) # Output: x // y = 3
 
-# Remainder of the division of left operand by the right
 print('x % y =', x%y) # Output: x % y = 2
 
-# Left operand raised to the power of right (x^y)
 print('x ** y =', x**y) # Output: x ** y = 38416
 ```
 
@@ -135,11 +103,11 @@ Assignment operators are used to assign values to variables. You have already se
 ```python
 x = 5
 
-# x += 5 ----> x = x + 5
+# x += 5 --> x = x + 5
 x +=5
 print(x) # Output: 10
 
-# x /= 5 ----> x = x / 5
+# x /= 5 --> x = x / 5
 x /= 5
 print(x) # Output: 2.0
 ```
@@ -191,7 +159,7 @@ datatype of num_new: datatype of num_new: <class 'float'>
 ```
 Here, num_new has float data type because Python always converts smaller data type to larger data type to avoid the loss of data
 
-**Here is an example where Python interpreter cannot implicitly type convert**
+**example where Python interpreter cannot implicitly type convert**
 ```python
 num_int = 123     # int type
 num_str = "456"   # str type
