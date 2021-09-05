@@ -469,16 +469,132 @@ Here's how you can change, add or delete dictionary elements
 person = {'name':'doublegrey', 'age': 18}
 
 person['age'] = 19 
-print(person)
 
 person['profession'] = 'programmer'
-print(person)
 
-
-# Deleting age
 del person['age']
-print(person)
-
-del person
 ```
 
+#### range()
+```range()``` returns an immutable sequence of numbers between the given start integer to the stop integer
+```python
+numbers = range(1, 6)
+print(list(numbers)) # Output: [1, 2, 3, 4, 5]
+```
+```step``` parameter
+```python
+numbers = range(1, 6, 2)
+print(list(numbers)) # Output: [1, 3, 5]
+numbers = range(5, 0, -1)
+print(list(numbers)) # Output: [5, 4, 3, 2, 1]
+```
+
+#### if/else
+```python
+num = -1
+
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+    
+# Output: Negative number
+```
+There can be zero or more ```elif``` parts, and the ```else``` part is optional
+
+#### while
+```python
+n = 100
+
+sum = 0
+i = 1
+
+while i <= n:
+    sum = sum + i
+    i = i+1
+
+print("The sum is", sum)
+
+# Output: The sum is 5050
+```
+
+#### for
+```for``` loop is used to iterate over a sequence (list, tuple, string) or other iterable objects
+
+```python
+numbers = [6, 5, 3, 8, 4, 2]
+
+sum = 0
+
+for val in numbers:
+  sum = sum+val
+
+print("The sum is", sum)
+
+# Output: The sum is 28
+```
+
+
+#### break
+The ```break``` statement terminates the loop containing it
+
+```python
+for val in "string":
+    if val == "r":
+        break
+    print(val)
+
+print("end")
+```
+```
+s
+t
+end
+```
+
+#### continue
+The ```continue``` statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration
+
+```python
+for val in "string":
+    if val == "r":
+        continue
+    print(val)
+
+print("end")
+```
+```
+s
+t
+i
+n
+g
+end
+```
+
+#### Function
+A function is a group of related statements that perform a specific task. You have to call the function to run the codes inside it
+```python
+def greet():
+  print("hello, stranger")
+  print("hello, user")
+  
+# function call
+greet()
+```
+```
+hello, stranger
+hello, user
+```
+Function can accept arguments and return values
+```python
+def add_numbers(a, b):
+  sum = a + b
+  return sum
+
+value = add_numbers(4, 5)
+print(value)
+# Output: 9
+```
